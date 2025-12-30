@@ -1,0 +1,70 @@
+# ========================
+# GLOBAL (OS & IDE)
+# ========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ========================
+# PYTHON BACKEND (FastAPI)
+# ========================
+# Байт-код (компилированные файлы python)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Виртуальные окружения (ОБЯЗАТЕЛЬНО)
+venv/
+env/
+.venv/
+.env/
+
+# Переменные окружения (СЕКРЕТНЫЕ ДАННЫЕ)
+# Никогда не грузи .env с паролями в гит!
+.env
+.env.*
+!.env.example
+
+# База данных SQLite (локальную базу не грузим)
+*.db
+*.sqlite3
+*.sqlite
+
+# Тесты и покрытие кода
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Логи и временные файлы
+*.log
+local_settings.py
+
+# Миграции (иногда папку versions оставляют, но кэш убираем)
+backend/app/alembic/__pycache__/
+
+# ========================
+# FRONTEND (Vue.js / Node)
+# ========================
+# Зависимости (самая тяжелая папка, никогда не грузим)
+node_modules/
+
+# Папка сборки (build output)
+dist/
+build/
+
+# Логи пакетных менеджеров
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Временные файлы тестов и линтеров
+.eslintcache
+
+# Env файлы фронтенда (если есть секреты)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
